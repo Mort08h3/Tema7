@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <p>hvad er længden</p>
+    <input type="text" id="length">
+
+
+    <p>hvad er bredden</p>
+    <input type="text" id="width">
+
+    <button>udregn areal og kig i console</button>
+
+    <script>
+        document.querySelector("button").addEventListener("click", buttonClicked)
+
+        function buttonClicked() {
+            let length = document.querySelector("#length").value;
+            let width = document.querySelector("#width").value;
+            let areal = length * width;
+            let resultat = `Arealet er ${areal}`;
+            console.log(resultat);
+        }
+        /*
+        let length = 3;
+        let width = 5;
+        let areal = length * width;
+        let resultat = `Længden er ${lenght} meter og bredden er ${width} meter.Arealet er ${areal}`;
+        console.log(resultat);
+        */
+
+    </script>
+</body>
+
+</html>
